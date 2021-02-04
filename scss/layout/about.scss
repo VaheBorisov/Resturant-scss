@@ -19,7 +19,7 @@
     }
     .heading {
         @include heading(#cc9900);
-
+    
         .divider {
             margin: 1rem auto;
             width: 230px;
@@ -27,7 +27,6 @@
             background-image: url(../../img/Divider2.png);
             filter: invert(53%) sepia(85%) saturate(1064%) hue-rotate(15deg) brightness(95%) contrast(105%);
         }
-
         .cook {
             margin: 4rem auto 0 auto;
             width: 219px;
