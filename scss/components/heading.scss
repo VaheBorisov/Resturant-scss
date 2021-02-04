@@ -1,0 +1,18 @@
+@mixin heading($colorP, ) {
+    width: 40%;
+    max-width: 432px;
+
+    .heading_p {
+        font-size: 36px;
+        color: $colorP;
+        font-family: "YesevaOne Regular";
+        text-align: center;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #4c4c4c;
+        font-family: "Lato Regular";
+        text-align: center;
+    }
+}

@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "YesevaOne Regular";
+    font-weight: 400;
+    src: url('Yeseva\ One/yesevaone-regular-webfont.woff');
+    src: url('Yeseva\ One/yesevaone-regular-webfont.woff2');
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    font-weight: 400;
+    src: url("Lato\ Regular/lato-regular-webfont.woff");
+    src: url("Lato\ Regular/lato-regular-webfont.woff2")
+}
+
+@font-face {
+    font-family: "OpenSans Light";
+    font-weight: 300;
+    src: url("Open\ Sans/opensans-light-webfont.woff");
+    src: url("Open\ Sans/opensans-light-webfont.woff2")
+}
+
+@font-face {
+    font-family: "OpenSans Regular";
+    font-weight: 400;
+    src: url("Open\ Sans/opensans-regular-webfont.woff");
+    src: url("Open\ Sans/opensans-regular-webfont.woff2")
+}
+
+@font-face {
+    font-family: "OpenSans Semi-Bold";
+    font-weight: 600;
+    src: url("Open\ Sans/opensans-semibold-webfont.woff");
+    src: url("Open\ Sans/opensans-semibold-webfont.woff2")
+}
+
+@font-face {
+    font-family: "OpenSans Bold";
+    font-weight: 700;
+    src: url("Open\ Sans/opensans-bold-webfont.woff");
+    src: url("Open\ Sans/opensans-bold-webfont.woff2")
+}
+
+@font-face {
+    font-family: "GentiumBook Regular";
+    font-weight: 400;
+    src: url("Gentium\ Book/gentiumbookbasic-regular-webfont.woff");
+    src: url("Gentium\ Book/gentiumbookbasic-regular-webfont.woff2");
+}
+
+@font-face {
+    font-family: "GentiumBook Bold";
+    font-weight: 700;
+    src: url("Gentium\ Book/gentiumbookbasic-bold-webfont.woff");
+    src: url("Gentium\ Book/gentiumbookbasic-bold-webfont.woff2");
+}

@@ -1,0 +1,11 @@
+@mixin button($width , $height, $BGcolor, $color) {
+    width: $width;
+    height: $height;
+    background-color: $BGcolor;
+    border: 1px solid $color;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Lato Regular";
+    text-align: center;
+    text-transform: uppercase;
+}

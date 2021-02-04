@@ -1,0 +1,45 @@
+.about {
+    @extend %display-flex;
+    width: 100%;
+    min-height: 710px;
+    background-image: url(./img/aboutBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        opacity: 2%;
+        width: 100%;
+        height: 710px;
+        background-image: linear-gradient(-43deg, #010101 0%, #fff 100%);    
+    }
+    >.container {
+        justify-content: space-between
+    }
+    .heading {
+        @include heading(#cc9900);
+
+        .divider {
+            margin: 1rem auto;
+            width: 230px;
+            height: 25px;
+            background-image: url(../../img/Divider2.png);
+            filter: invert(53%) sepia(85%) saturate(1064%) hue-rotate(15deg) brightness(95%) contrast(105%);
+        }
+
+        .cook {
+            margin: 4rem auto 0 auto;
+            width: 219px;
+            height: 221px;
+            background-image: url(../../img/cook.png);
+        }
+    }
+    .dish {
+        width: 50%;
+        height: 600px;
+        background-image: url(../../img/dish.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
