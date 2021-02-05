@@ -1,0 +1,87 @@
+.menu {
+    @extend %display-flex;
+    width: 100%;
+    min-height: 994px;
+    background-image: url(../../img/pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 0px 50px 50px rgba($color: #000000, $alpha: 0.08);
+    &::before {
+        content: '';
+        position: absolute;
+        opacity: 0.1;
+        width: 100%;
+        min-height: 994px;
+        background-image: linear-gradient(134deg, #205a5b 0%, #ffffff 100%);
+    }
+    
+    > .container {
+        min-height: 794px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &_group {
+        max-width: 430px;
+        width: 40%;
+        .heading {
+            @include heading($yellow);
+            width: 100%;
+            .divider {
+                margin: 1rem auto;
+                width: 230px;
+                height: 25px;
+                background-image: url(../../img/Divider2.png);
+                filter: invert(53%) sepia(85%) saturate(1064%) hue-rotate(15deg) brightness(95%) contrast(105%);
+            }
+        }
+
+        &_ingredients {
+            @extend %display-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 35px;
+            padding: 11px;
+            &_header {
+                @extend %display-flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #c89f2d;
+                padding-bottom: 0.5rem;
+                width: 100%;
+                &_p {
+                    font-size: 21px;
+                    line-height: 24 / 21;
+                    color: #c89f2d;
+                }
+            }
+            &_description {
+                font-size: 16px;
+                padding-top: 0.5rem;
+                line-height: calc(24 / 16);
+                font-family: "Lato Regular";
+                color: #000000;
+            }
+
+            &_special {
+                border: 1px solid #c89f2d;
+                position: relative;
+
+                &::before {
+                    content: 'Special';
+                    color: #f8fafa;
+                    @extend %display-flex;
+                    width: 69px;
+                    height: 22px;
+                    font-size: 14px;
+                    line-height: 1.71;
+                    font-family: "Lato Regular";
+                    background-color: #c89f2d;
+                    position: absolute;
+                    right: -1px;
+                    top: -22px;
+                }
+            }
+        }
+    }
+
+}

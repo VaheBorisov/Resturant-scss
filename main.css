@@ -1,4 +1,4 @@
-.promo, .promo > .container .buttons, .about, .ingredients, .ingredients_imgs .bread {
+.promo, .promo > .container .buttons, .about, .ingredients, .ingredients_block, .menu, .menu_group_ingredients, .menu_group_ingredients_header, .menu_group_ingredients_special::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +298,7 @@ header .nav-menu .header-icons .icon:last-child {
   max-width: 432px;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -332,23 +332,189 @@ header .nav-menu .header-icons .icon:last-child {
 
 .ingredients_imgs {
   width: 100%;
-  position: relative;
 }
 
 .ingredients_imgs .bread {
-  position: absolute;
-  top: 100px;
+  z-index: 5;
+  bottom: 60px;
+  right: 30px;
   width: 201px;
   height: 134px;
+}
+
+.ingredients_imgs .bread_img {
+  background-image: url(../../img/bread.png);
+  background-position: center;
+}
+
+.ingredients_imgs .peper {
+  z-index: 4;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 234px;
+  height: 208px;
+  bottom: 60px;
+  right: 140px;
+}
+
+.ingredients_imgs .peper_img {
+  margin-left: 44px;
+  margin-bottom: 20px;
+  background-image: url(../../img/peper.png);
+  background-position: center;
+}
+
+.ingredients_imgs .wheat {
+  z-index: 3;
+  width: 277px;
+  height: 182px;
+  bottom: 30px;
+  left: 30px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.ingredients_imgs .wheat_img {
+  margin-left: 50px;
+  margin-bottom: 55px;
+  background-image: url(../../img/wheat.png);
+  background-position: 18.05054% 30.21978%;
+}
+
+.ingredients_block {
+  position: absolute;
   background-color: rgba(255, 255, 255, 0.09);
   border-radius: 3px;
 }
 
-.ingredients_imgs .bread_img {
+.ingredients_block div {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-image: url(../../img/bread.png);
-  background-position: center;
+}
+
+.menu {
+  width: 100%;
+  min-height: 994px;
+  background-image: url(../../img/pattern.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0, 0.08);
+          box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0, 0.08);
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  opacity: 0.1;
+  width: 100%;
+  min-height: 994px;
+  background-image: linear-gradient(134deg, #205a5b 0%, #ffffff 100%);
+}
+
+.menu > .container {
+  min-height: 794px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_group {
+  max-width: 430px;
+  width: 40%;
+}
+
+.menu_group .heading {
+  width: 40%;
+  max-width: 432px;
+  width: 100%;
+}
+
+.menu_group .heading .heading_p {
+  font-size: 36px;
+  color: #cc9900;
+  font-family: "YesevaOne Regular";
+  text-align: center;
+}
+
+.menu_group .heading p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4c4c4c;
+  font-family: "Lato Regular";
+  text-align: center;
+}
+
+.menu_group .heading .divider {
+  margin: 1rem auto;
+  width: 230px;
+  height: 25px;
+  background-image: url(../../img/Divider2.png);
+  -webkit-filter: invert(53%) sepia(85%) saturate(1064%) hue-rotate(15deg) brightness(95%) contrast(105%);
+          filter: invert(53%) sepia(85%) saturate(1064%) hue-rotate(15deg) brightness(95%) contrast(105%);
+}
+
+.menu_group_ingredients {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 35px;
+  padding: 11px;
+}
+
+.menu_group_ingredients_header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #c89f2d;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.menu_group_ingredients_header_p {
+  font-size: 21px;
+  line-height: 24 / 21;
+  color: #c89f2d;
+}
+
+.menu_group_ingredients_description {
+  font-size: 16px;
+  padding-top: 0.5rem;
+  line-height: calc(24 / 16);
+  font-family: "Lato Regular";
+  color: #000000;
+}
+
+.menu_group_ingredients_special {
+  border: 1px solid #c89f2d;
+  position: relative;
+}
+
+.menu_group_ingredients_special::before {
+  content: 'Special';
+  color: #f8fafa;
+  width: 69px;
+  height: 22px;
+  font-size: 14px;
+  line-height: 1.71;
+  font-family: "Lato Regular";
+  background-color: #c89f2d;
+  position: absolute;
+  right: -1px;
+  top: -22px;
 }
 /*# sourceMappingURL=main.css.map */
